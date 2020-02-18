@@ -1,0 +1,58 @@
+	
+	 //---------------------------------------------OUTCOME OF THE UNIT TEST-------------------------------------------------
+	 # NOTE: To run the test Unit: Use "Test_Exchange class" located in the exchangeStructures package.
+	 
+	The following tests pass:
+	 
+    //Before we start, there should be no price levels in either the bid book or the offer book of the above market
+	 assertTrue(exchange.getMarket(marketId0).getOfferBook().getPriceLevels().size() == 0);
+	 assertTrue(exchange.getMarket(marketId0).getBidBook().getPriceLevels().size() == 0);
+	 
+	 // There should be one price level in the bid book
+	 assertTrue(exchange.getMarket(marketId0).getBidBook().getPriceLevels().size() == 1);
+	 // There should be no price levels in the offer book
+	 assertTrue(exchange.getMarket(marketId0).getOfferBook().getPriceLevels().size() == 0);
+	 
+	 I am still working on the rest.
+	 //----------------------------------------------------------------------------------------------------------------------
+	 
+	  # The exchange project has 5 packages:
+	 
+	 1. exchangeStructures
+	 2. fills
+	 3. messages
+	 4. orderSpecs
+	 5. orderTypes
+	 # Each of the above package has the following corresponding classes:
+	 
+	 1. exchangeStructures
+		a)BidBook
+		b)Exchange
+		c)Market
+		d)OfferBook
+		e)PriceLevel
+		f)Test_Exchange
+	
+	 2. fills:
+		a)Fill
+		
+	 3.messages
+		a)Cancel
+		b)CancelOrderId
+		
+	 4.orderSpecs
+		a)ClientId
+		b)ClientOrderId
+		c)Market
+		d)Price
+		e)Quantity
+		f)Side
+	5. orderTypes
+		a)RestingOrder
+		b)SweepingOrder
+	 
+		
+
+
+
+	
